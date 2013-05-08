@@ -13,7 +13,7 @@
 // 返回实体管理对象
 + (EntityManager *)createManager:(NSString*)_dbname
 {
-    return [[[self class] alloc] init:_dbname];
+    return [[[[self class] alloc] init:_dbname] autorelease];
 }
 
 - (id)init:(NSString*)_dbname
